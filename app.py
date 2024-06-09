@@ -152,6 +152,34 @@ def print():
         return redirect(url_for('login'))
     return render_template('print_photos.html')
 
+@app.route('/image_hubp')
+def image_hubp():
+    if 'user_id' not in session:
+        flash('You are not logged in!', 'danger')
+        return redirect(url_for('login'))
+    return render_template('Imagehub_photgrapher.html')
+
+@app.route('/image_hubu')
+def image_hubu():
+    if 'user_id' not in session:
+        flash('You are not logged in!', 'danger')
+        return redirect(url_for('login'))
+    return render_template('Imagehub_user.html')
+
+@app.route('/bookings_user')
+def bookings_user():
+    if 'user_id' not in session:
+        flash('You are not logged in!', 'danger')
+        return redirect(url_for('login'))
+    return render_template('mybookings_user.html')
+
+@app.route('/event_order')
+def event_order():
+    if 'user_id' not in session:
+        flash('You are not logged in!', 'danger')
+        return redirect(url_for('login'))
+    return render_template('view_event_order.html')
+
 @app.route('/confirm_booking', methods=['GET'])
 def confirm_booking():
     return render_template('confirm_booking.html')
