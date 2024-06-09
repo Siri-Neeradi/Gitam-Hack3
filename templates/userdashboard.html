@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
@@ -5,7 +6,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div class="relative min-h-screen bg-cover bg-center flex items-center justify-center dark:bg-zinc-900" style="background-image: url('https://placehold.co/1920x1080');">
+    <div class="relative min-h-screen bg-cover bg-center flex items-center justify-center dark:bg-zinc-900" style="background-image: url('https://cdn.mos.cms.futurecdn.net/f67zdwFQ62gYvffsdUAVti-1200-80.jpg');">
       <div class="absolute inset-0 bg-black opacity-50"></div>
       <div class="relative z-10 flex flex-col items-center justify-center text-center text-white space-y-8 px-8">
         <h1 class="text-4xl font-bold">User Dashboard</h1>
@@ -13,27 +14,27 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
           <a href="{{ url_for('manage_user') }}" class="flex items-center justify-center bg-zinc-800 bg-opacity-75 border border-white rounded-lg p-4">
             <span>Manage Profile</span>
-            <img src="https://placehold.co/32x32" alt="profile" class="w-8 h-8 ml-2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQth45O1Djh9qUrlqPSP734V1d_GryxuQvsuA&s" alt="profile" class="w-8 h-8 ml-2">
           </a>
           <a href="{{ url_for('book_photog') }}" class="flex items-center justify-center bg-zinc-800 bg-opacity-75 border border-white rounded-lg p-4">
             <span>Book Photographer</span>
-            <img src="https://placehold.co/32x32" alt="photographer" class="w-8 h-8 ml-2">
+            <img src="https://t3.ftcdn.net/jpg/04/92/94/70/360_F_492947093_LOGkIRfXScJs3PS2tgjJ4lGR74B0hs7Z.jpg" alt="photographer" class="w-8 h-8 ml-2">
           </a>
           <a href="{{ url_for('add_feedback')}}" class="flex items-center justify-center bg-zinc-800 bg-opacity-75 border border-white rounded-lg p-4">
             <span>Add Feedback</span>
-            <img src="https://placehold.co/32x32" alt="feedback" class="w-8 h-8 ml-2">
+            <img src="https://t4.ftcdn.net/jpg/01/64/84/81/360_F_164848164_eDLcO5LcnBapZls7Kh8u8kCmhL1izZoU.jpg" alt="feedback" class="w-8 h-8 ml-2">
           </a>
-          <a href="#" class="flex items-center justify-center bg-zinc-800 bg-opacity-75 border border-white rounded-lg p-4">
+          <a href="{{ url_for('image_hubu') }}" class="flex items-center justify-center bg-zinc-800 bg-opacity-75 border border-white rounded-lg p-4">
             <span>Image Hub</span>
-            <img src="https://placehold.co/32x32" alt="image" class="w-8 h-8 ml-2">
+            <img src="https://png.pngtree.com/element_our/20190529/ourmid/pngtree-photo-icon-image_1197627.jpg" alt="image" class="w-8 h-8 ml-2">
           </a>
           <a href="{{ url_for('print') }}" class="flex items-center justify-center bg-zinc-800 bg-opacity-75 border border-white rounded-lg p-4">
             <span>Print Photos</span>
-            <img src="https://placehold.co/32x32" alt="print" class="w-8 h-8 ml-2">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/000/423/074/small/Web__287_29.jpg" alt="print" class="w-8 h-8 ml-2">
           </a>
-          <a href="#" class="flex items-center justify-center bg-zinc-800 bg-opacity-75 border border-white rounded-lg p-4">
+          <a href="{{ url_for('bookings_user')}}" class="flex items-center justify-center bg-zinc-800 bg-opacity-75 border border-white rounded-lg p-4">
             <span>My Bookings</span>
-            <img src="https://placehold.co/32x32" alt="bookings" class="w-8 h-8 ml-2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI4jF9jmsf416oL2rzl7z1I8mefkv0ipwC9pdHBo4ripuRTI9PxHBVap2Q5qWWKII83Tw&usqp=CAU" alt="bookings" class="w-8 h-8 ml-2">
           </a>
         </div>
       </div>

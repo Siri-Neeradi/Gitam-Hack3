@@ -3,77 +3,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body
+        
+    {
+      background-image: url("https://cdn.mos.cms.futurecdn.net/f67zdwFQ62gYvffsdUAVti-1200-80.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    
+    </style>
   </head>
   <body>
     <div class="flex flex-col md:flex-row p-4">
     <div class="md:w-1/3 p-4">
-        <h2 class="text-xl font-bold">Review this product</h2>
+        <h2 class="text-xl font-bold">Rate the photographer</h2>
         <p class="text-zinc-600">Share your thoughts with other customers</p>
         <button id="toggleReview" class="mt-4 px-4 py-2 border border-zinc-300 rounded-lg text-zinc-700 hover:bg-zinc-100">
-            Write a product review
+            Rate
         </button>
-        <div class="mt-4 w-32 h-32 bg-zinc-300 rounded-lg"></div>
+        <div class="mt-4 w-32 h-32 bg-zinc-300 rounded-lg"><img src="data:image/jpeg;base64,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"></div>
     </div>
     <div id="reviewForm" class="hidden md:w-2/3 p-4">
         <div class="flex items-center bg-blue-100 p-2 rounded-lg">
-            <img class="w-10 h-10 rounded-full" src="https://placehold.co/40x40" alt="User Avatar">
-            <span class="ml-2">Neeradichandrashekar</span>
+            <img class="w-10 h-10 rounded-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSLU5_eUUGBfxfxRd4IquPiEwLbt4E_6RYMw&s" alt="User Avatar">
+            <span class="ml-2">User Name </span>
             <a href="#" class="ml-auto text-blue-500">Edit</a>
         </div>
         <h3 class="mt-4 text-xl font-bold">Create Review</h3>
-        <div class="flex items-center mt-2">
-            <img class="w-12 h-12" src="https://placehold.co/50x50" alt="Product Image">
-            <p class="ml-2 text-zinc-700">Daikin 1.5 Ton 3 Star Inverter Split AC (Copper, PM 2.5 Filter, Triple Display, Dew Clean Technology)</p>
-        </div>
         <div class="mt-4">
             <h4 class="font-bold">Overall rating</h4>
             <div class="flex">
-                <img src="https://placehold.co/20x20" alt="Star">
-                <img src="https://placehold.co/20x20" alt="Star">
-                <img src="https://placehold.co/20x20" alt="Star">
-                <img src="https://placehold.co/20x20" alt="Star">
-                <img src="https://placehold.co/20x20" alt="Star">
+                <img src="https://t4.ftcdn.net/jpg/01/80/76/45/360_F_180764584_yuBOc1cp2xIwXEFiga4MJa8tfG1YLcXA.jpg" height=100 width=100>
             </div>
         </div>
         <div class="mt-4">
             <h4 class="font-bold">Rate features</h4>
             <div class="mt-2">
-                <p class="font-semibold">Energy efficiency</p>
+                <p class="font-semibold">APP EXPERIENCE</p>
                 <div class="flex items-center">
                     <div class="flex">
-                        <img src="https://placehold.co/20x20" alt="Star">
-                        <img src="https://placehold.co/20x20" alt="Star">
-                        <img src="https://placehold.co/20x20" alt="Star">
-                        <img src="https://placehold.co/20x20" alt="Star">
-                        <img src="https://placehold.co/20x20" alt="Star">
+                        <img src="https://t4.ftcdn.net/jpg/01/80/76/45/360_F_180764584_yuBOc1cp2xIwXEFiga4MJa8tfG1YLcXA.jpg" height=100 width=100>
                     </div>
-                    <button class="ml-2 text-zinc-500">x</button>
+                    <button class="ml-2 text-zinc-500"></button>
                 </div>
             </div>
             <div class="mt-2">
-                <p class="font-semibold">Noise Level</p>
+                <p class="font-semibold">PICTURE QUALITY</p>
                 <div class="flex items-center">
                     <div class="flex">
-                        <img src="https://placehold.co/20x20" alt="Star">
-                        <img src="https://placehold.co/20x20" alt="Star">
-                        <img src="https://placehold.co/20x20" alt="Star">
-                        <img src="https://placehold.co/20x20" alt="Star">
-                        <img src="https://placehold.co/20x20" alt="Star">
+                        <img src="https://t4.ftcdn.net/jpg/01/80/76/45/360_F_180764584_yuBOc1cp2xIwXEFiga4MJa8tfG1YLcXA.jpg" height=100 width=100>
                     </div>
-                    <button class="ml-2 text-zinc-500">x</button>
+                    <button class="ml-2 text-zinc-500"></button>
                 </div>
             </div>
             <div class="mt-2">
-                <p class="font-semibold">Remote Control</p>
+                <p class="font-semibold">QUICK DELIVERY</p>
                 <div class="flex items-center">
                     <div class="flex">
-                        <img src="https://placehold.co/20x20" alt="Star">
-                        <img src="https://placehold.co/20x20" alt="Star">
-                        <img src="https://placehold.co/20x20" alt="Star">
-                        <img src="https://placehold.co/20x20" alt="Star">
-                        <img src="https://placehold.co/20x20" alt="Star">
+                        <img src="https://t4.ftcdn.net/jpg/01/80/76/45/360_F_180764584_yuBOc1cp2xIwXEFiga4MJa8tfG1YLcXA.jpg" height=100 width=100>
                     </div>
-                    <button class="ml-2 text-zinc-500">x</button>
+                    <button class="ml-2 text-zinc-500"></button>
                 </div>
             </div><br><br>
             <button id="submitReview" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">

@@ -4,22 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .button {
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-2px); 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        /* Adjust font size of "Lens LineUp" */
+        #id1 {
+            font-size: 5rem; /* Adjust the size as needed */
+            margin-top: -50px; /* Move the heading further to the top */
+        }
+        /* Adjust height and width of the line */
+        .line {
+            width: 200px; /* Increase the width of the line */
+            height: 4px; /* Keep the height of the line */
+            background-color: white;
+            margin-bottom: 20px; /* Adjust the margin bottom as needed */
+        }
+    </style>
 </head>
 <body>
-    <div class="relative min-h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('https://images.pexels.com/photos/1264210/pexels-photo-1264210.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+    <div class="relative min-h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('https://cdn.pixabay.com/photo/2023/05/01/13/12/tree-7963026_1280.jpg');">
         <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="contact-details text-white text-right">
+            <p>Email: lenslineup@gmail.com</p>
+            <p>Phone: +91 741XXXXXXX</p>
+        </div>
+
         <div class="relative z-10 flex flex-col items-center justify-center text-center text-white space-y-8 px-8">
-            <h1 class="text-4xl font-bold">Snap Shot</h1>
-            <div class="w-24 h-1 bg-white"></div>
-            <p class="text-lg italic">"Photography" is an austere and blazing poetry of the real.</p>
+            <h1 id="id1" style="margin-right:800px" class="text-4xl font-bold">Lens LineUp</h1>
+            <div style="margin-right:900px" class="line"></div> <!-- Added line div -->
+            <p style="margin-left:0px"><pre style="margin-left:0px">"Booking photography is a project which will enable customers or clients 
+to book for professional photographer by viewing their qualification and 
+    previous works (some of the photos took by them should be on their profile)
+via online.</pre></p>
             <div class="grid grid-cols-2 gap-4 mt-8">
-                <a href="{{ url_for('signup') }}" class="flex items-center justify-center bg-zinc-800 bg-opacity-75 border border-white rounded-lg p-4">
-                    <span>Register</span>
-                    <img src="https://placehold.co/32x32" alt="home" class="w-8 h-8 ml-2">
+                <a href="{{ url_for('signup') }}" class="button border border-white rounded-lg p-4 hover:shadow-md">
+                    REGISTER
                 </a>
-                <a href="{{ url_for('login') }}" class="flex items-center justify-center bg-zinc-800 bg-opacity-75 border border-white rounded-lg p-4">
-                    <span>Login</span>
-                    <img src="https://placehold.co/32x32" alt="login" class="w-8 h-8 ml-2">
+                <a href="{{ url_for('login') }}" class="button border border-white rounded-lg p-4 hover:shadow-md">
+                    LOGIN
                 </a>
             </div>
         </div>

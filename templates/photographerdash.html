@@ -6,7 +6,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-<div class="relative min-h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('https://placehold.co/1920x1080');">
+<div class="relative min-h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('https://cdn.pixabay.com/photo/2018/03/20/22/04/camera-3244872_1280.jpg');">
     <div class="absolute inset-0 bg-black opacity-50"></div>
     <div class="relative z-10 flex flex-col items-center justify-center text-center text-white space-y-8 px-8">
         <h1 class="text-4xl font-bold">Photographer Dashboard</h1>
@@ -14,24 +14,28 @@
         <div class="grid grid-cols-2 gap-4 mt-8">
             <a href="{{ url_for('manage_profile') }}" class="flex items-center justify-center bg-zinc-800 bg-opacity-75 border border-white rounded-lg p-4">
                 <span>Manage Profile</span>
-                <img src="https://placehold.co/32x32" alt="profile" class="w-8 h-8 ml-2">
+                <img src="https://cdn.vectorstock.com/i/1000v/23/81/default-avatar-profile-icon-vector-18942381.jpg" alt="profile" class="w-8 h-8 ml-2">
             </a>
             <a href="{{ url_for('view_review') }}" class="flex items-center justify-center bg-zinc-800 bg-opacity-75 border border-white rounded-lg p-4">
                 <span>View Feedback</span>
-                <img src="https://placehold.co/32x32" alt="feedback" class="w-8 h-8 ml-2">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/002/238/477/small/feedback-icon-free-vector.jpg" alt="feedback" class="w-8 h-8 ml-2">
             </a>
             <a href="{{ url_for('view_payment') }}" class="flex items-center justify-center bg-zinc-800 bg-opacity-75 border border-white rounded-lg p-4">
                 <span>View Payment</span>
-                <img src="https://placehold.co/32x32" alt="payment" class="w-8 h-8 ml-2">
+                <img src="https://thumbs.dreamstime.com/z/payment-smartphone-icon-white-background-online-mobile-sign-contactless-symbol-flat-style-191127647.jpg" alt="payment" class="w-8 h-8 ml-2">
             </a>
-            <a href="#" class="flex items-center justify-center bg-zinc-800 bg-opacity-75 border border-white rounded-lg p-4">
+            <a href="{{url_for('event_order')}}" class="flex items-center justify-center bg-zinc-800 bg-opacity-75 border border-white rounded-lg p-4">
                 <span>View Event Orders</span>
-                <img src="https://placehold.co/32x32" alt="orders" class="w-8 h-8 ml-2">
+                <img src="https://cdn.pixabay.com/photo/2021/02/02/14/54/icon-5974270_960_720.png" alt="orders" class="w-8 h-8 ml-2">
+            </a>
+            <a href="{{ url_for('image_hubp') }}" class="flex items-center justify-center bg-zinc-800 bg-opacity-75 border border-white rounded-lg p-4">
+                <span>Image Hub</span>
+                <img src="https://png.pngtree.com/element_our/20190529/ourmid/pngtree-photo-icon-image_1197627.jpg" alt="orders" class="w-8 h-8 ml-2">
             </a>
         </div>
     </div>
     <div class="absolute bottom-4 w-full text-center text-white text-sm">
-        <p>Copyright © 2021 Your Company. Design: Shebin p biju</p>
+        <p>Copyright © 2024 Lens LineUp</p>
     </div>
 </div>
 </body>

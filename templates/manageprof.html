@@ -6,37 +6,39 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div class="min-h-screen flex items-center justify-center bg-zinc-800 text-white">
-        <div class="w-full max-w-md p-8 space-y-6 bg-zinc-700 rounded-lg shadow-md">
-            <h2 class="text-2xl font-bold text-center">Manage Profile</h2>
+    <div class="min-h-screen flex items-center justify-center bg-zinc-800 text-white" style="background-image: url('https://cdn.pixabay.com/photo/2018/03/20/22/04/camera-3244872_1280.jpg');">
+        <div class="w-full max-w-md p-8 space-y-6 bg-zinc-800 rounded-lg shadow-md" style="opacity: 0.9">
+            <h2 class="text-2xl font-bold text-center" style="color: white">Manage Profile</h2>
             <hr class="border-zinc-500">
             <div class="flex items-center justify-center">
                 <div class="w-24 h-24 rounded-full overflow-hidden">
-                    <img src="https://placehold.co/150" alt="Profile Picture" class="w-full h-full object-cover" />
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALYAAACUCAMAAAAJSiMLAAAAMFBMVEXk5ueutLfn6eqrsbSnrrGyuLvq7O3h4+S4vcDb3t+9wsTJzc/R1NbV2NrM0NLFycsFiCOrAAAEXklEQVR4nO2c2ZLcKgxAQezY2P//t8Hu1bcXG6RGzC2fl6Sm8nCiEgKMNEKcnJycnJycnJycnJyc/L8AAOHCglv//hew1qU5eu9Nxvs4JGctt9Qe4AYjpVRKyZX1TzMJ23HMwY1eX303aO2T61Qc3GT0G+dL1LUZ+xT/EOm7uPJjd97WeflNehWXvrOyAuljemzNuwq4m/ciffceuF0fuHjUOnvHblamOW6dvb3ow9sUSHfj7XxJrC/ejltaiIK8vntH7nDD4RryjJ54D1f2YL1+iXdijberifWCCZzasdJaqplPGsZa60xi0y6vfU/h9mzaU916vKDZTlUI6QUebUAFm+0Qa5HBzpcGBmtI9evxCseeA9U1+4aaGbRd4Xn1Db79Vonaam60z5K6o98W3f5iidkhb7S/L0DAp3b2bq6NL38Z3XxNIrfIq/bYWptgRS6Vu/HlzKE3mxXf+k7pSbRl62hTFJKcJa21KVI7azfeJom09al9au/RPLf/ZiUp/aj9idYFkODcKtvvkscfmb6hYuskoTkBTo2X5NGHyB3t1udtSATW7W83eU0SaDO8Pf3NmztM+GAzvOBQXN0ZvkqRfANsby1gRCc3ywdui9Vm+b4tYMB5q9Zb5BWHC3brs/adAfVSxhTs5a6ASBPDJL1sOYjnVL5XYMS3KRUZrSHUdzhwdmbYylXJ3Q8IFT1HDB+IX6i5CzN2N9wpPwkqjpPfC6XLUvEuxxtQtskr00u3aCjIb+V7sS7pzVWxg47LBwfrt5q4Rbfkq+V+wJXsoSl3A4hhR1yZoTfpBRvmL+MJ2gxd1L1XQITBvJ0GUdpMobNximeyeVT6v84q9ux8wVo3RfMgTqH/mbIVyOohpJRCcNDzNNkGyNoP+p88XCRFSOMwz3EZPfQxxnmYxhSW/wi33Ssg8pYdxtlIvaC2K/Lyozglt/yzTmIP4FyaZp/dvu822V/GIeV0ZzcH69IQvfo6u7dxV8bPI289tCJFI1XpNUFJ44fAVGEAEuZJNZ9Q2qc5uDBI5BOf1jE1zXNwY8RKrxFXfmp2vrJi2J9EPSxuYmhR0QFGKucb8edJDmKkyI4tSseffjgBkTy59Coup9/d5+Hr9QUp/rNpcjtiHg92vXOK/2Btgvv8KwOI+MXcE8Uowh5qps1wEHMD6yXDE2GigKBp6DrgLUcybwg/KyBvxKlmiEgmbEq8STZNOzWM9eodCY6FFvFkyufNYE3gTdDrUueNsybp9qvxxtQTcI1X45P3UF+/4Zdnpz3v6ma7uodpKmpfLzHdIgTULkuS0UKMd1VXEm+KrN4VT5g0Ddo47YoRAOCOtaxplrHI3kQaSrvXgGiuBkthuJmL343SxgKisRo0hd2CPAe/Vwr3HPaafaOodhPN5xGgC06C2N/zQspxbUs0Vk2BPp4l0FGwCw5UoSNteXjIDzt0QMvhDb6n1C74pXDQx3nkijl6qezkGHXj6Jrkvo1tUe/a8P4B4PI5QosE7aAAAAAASUVORK5CYII=" alt="Profile Picture" class="w-full h-full object-cover" />
                 </div>
             </div>
             <p class="text-center text-xs text-zinc-400">Profile Picture</p>
             <div>
-                <label class="block text-sm font-medium mb-1">Full Name</label>
-                <input type="text" placeholder="Enter your full name" class="w-full px-3 py-2 bg-zinc-800 border border-zinc-600 rounded-md">
+                <label class="block text-sm font-medium mb-1" style="color: white">Full Name</label>
+                <input type="text" placeholder="Enter your full name" class="w-full px-3 py-2 bg-white border border-zinc-600 rounded-md">
             </div>
             <div>
-                <label class="block text-sm font-medium mb-1">Email</label>
-                <input type="email" placeholder="Enter your email" class="w-full px-3 py-2 bg-zinc-800 border border-zinc-600 rounded-md">
+                <label class="block text-sm font-medium mb-1" style="color: white">Email</label>
+                <input type="email" placeholder="Enter your email" class="w-full px-3 py-2 bg-white border border-zinc-600 rounded-md">
             </div>
             <div>
-                <label class="block text-sm font-medium mb-1">Contact No</label>
-                <input type="text" placeholder="Enter your contact number" class="w-full px-3 py-2 bg-zinc-800 border border-zinc-600 rounded-md">
+                <label class="block text-sm font-medium mb-1" style="color: white">Contact No</label>
+                <input type="text" placeholder="Enter your contact number" class="w-full px-3 py-2 bg-white border border-zinc-600 rounded-md">
             </div>
             <div>
-                <label class="block text-sm font-medium mb-1">Upload from Gallery</label>
-                <div class="w-full h-40 bg-zinc-800 border border-zinc-600 rounded-md flex items-center justify-center">
+                <label class="block text-sm font-medium mb-1" style="color: white">Upload from Gallery</label>
+                <div class="w-full h-40 bg-white border border-zinc-600 rounded-md flex items-center justify-center">
                     <label for="file-upload" class="cursor-pointer text-zinc-400">Click to upload photos</label>
                     <input id="file-upload" type="file" class="hidden">
                 </div>
             </div>
+            <a href="#" class="block w-full py-2 bg-white text-white rounded-md text-center hover:bg-zinc-500" style="color: black">Upload Portfolio</a>
             <p class="text-center text-xs text-zinc-400 mt-6">
-                Copyright © 2021 Your Company. Design: Shebin p biju
+
+                Copyright © 2024 Lens LineUp
             </p>
         </div>
     </div>
